@@ -72,12 +72,16 @@ body {
     min-height: 8.5rem;
     padding: 1.6rem;
     box-shadow: var(--shadow-card);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+/* covid Brasil logo
 .logo {
     fill: var(--clr-font);
     transition: var(--transition);
-}
+}*/
 
 .switch {
     display: flex;
@@ -110,6 +114,9 @@ body {
 
 
 /* 3. Loading
+
+
+
 /* 4. Container
 /* 5. State Select
 /* 6. Status
