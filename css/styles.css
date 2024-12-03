@@ -64,6 +64,14 @@ body {
 
 }
 
+section {
+    background-color: var(--clr-card);
+    transition: var(--transition);
+    box-shadow: var(--shadow-card);
+    padding: 1.6rem;
+    border-radius: 1rem;
+}
+
 /* 2. Navbar */
 
 .navbar {
@@ -117,9 +125,137 @@ body {
 
 
 
-/* 4. Container
-/* 5. State Select
-/* 6. Status
+/* 4. Container */
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+    margin: 3rem 1.6rem;
+
+
+}
+
+/* 5. State Select */
+
+.state-select {
+    font: var(--ts-normal-semibold);
+    background-color: var(--clr-card);
+    transition: var(--transition);
+    box-shadow: var(--shadow-card);
+    border-radius: 1rem;
+    position: relative;
+}
+
+.state-select-toggle { 
+    padding: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.state-select-toggle__icon {
+    transition: var(--transition);
+  
+}
+
+.state-select-toggle__icon--rotate{
+    transform: rotate(-180deg);
+}
+
+.state-select-list{
+    max-height: 30rem;
+    overflow-y: scroll;
+    border-radius: 1rem;
+    padding: 1.6rem;
+    
+    width: 100%;
+    background-color: var(--clr-card);
+    transition: var(--transition);
+    box-shadow: var(--shadow-card);
+    top: calc(100% + 1.5rem); /*100% equivale a altura do state select*/
+    /* visibility: hidden;
+    opacity: 0; */
+
+}
+
+.state-select-list--show{
+    visibility: visible;
+    opacity: 1;
+    top: calc(100% + .75rem);
+}
+
+.state-select-list__search {
+    background-color: var(--clr-background);
+    transition: var(--transition);
+    color: var(--clr-font);
+    padding: 1.6rem;
+    border-radius: 1rem;
+    border:none;
+    outline: none;
+    width: 100%
+}
+
+.state-select-list__search::placeholder{
+    color: var(--clr-font);
+    opacity: .6;
+    transition: var(--transition);
+}
+
+.state-select-list__item {
+    padding: 1.6rem;
+    color: var(--clr-link);
+    cursor: pointer;
+    z-index: 9;
+
+}
+
+.state-select-list__item:hover{
+    color: var(--clr-card);
+    background-color: var(--clr-link);
+}
+
+.state-select-list__item--hide{
+  display: none;
+}
+
+/* 6. Status */
+
+.status {
+    min-height: 12rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.status__icon {
+    font-size: 3.6rem;
+    margin-right: .8rem;
+}
+
+.info {
+    font: var(--clr-font);
+    text-transform:uppercase;
+}
+
+.status__icon--confirmed, .info__total--confirmed {
+    color: var(--clr-confirmed);
+    transition: var(--transition);
+}
+.status__icon--deaths, .info__total--deaths {
+    color: var(--clr-deaths);
+    transition: var(--transition);
+}
+.status__icon--vaccinated-1, .info__total--vaccinated-1 {
+    color: var(--clr-vaccinated-1);
+    transition: var(--transition);
+}
+.status__icon--vaccinated-2, .info__total--vaccinated-2 {
+    color: var(--clr-vaccinated-2);
+    transition: var(--transition);
+}
+
 /* 7. Data Box
 /* 8. Footer
 /**********************************/
