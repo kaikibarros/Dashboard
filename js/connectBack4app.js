@@ -16,7 +16,6 @@ async function chamarContato() {
     }
   }
 chamarContato();
-
 // chama a api de dados no back4App
 async function chamarAPI() {
   console.log("Chamando a função 'api'..."); 
