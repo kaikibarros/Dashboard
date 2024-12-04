@@ -8,9 +8,9 @@
 /* 0. Variáveis */
 
 [data-theme="light"] {
-	--clr-background:#F5F5F5;
+	--clr-background:#47663B;
 	--clr-font:#111111;
-    --clr-card:#FEE7E7;
+    --clr-card:#EED3B1;
     --clr-switch-track:#AABBCC;
     --clr-link:#3333FF;
 
@@ -59,7 +59,7 @@ html {
 }
 
 body {
-    background-color: var(--clr --clr-background);
+    background-color: var(--clr-background);
     transition: var(--transition);
 
 }
@@ -104,11 +104,12 @@ a{
     align-items: center;
 }
 
-/* covid Brasil logo
+
 .logo {
+
     fill: var(--clr-font);
     transition: var(--transition);
-}*/
+}
 
 .switch {
     display: flex;
